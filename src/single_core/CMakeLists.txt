@@ -210,21 +210,21 @@ target_link_libraries(A
   ${catkin_LIBRARIES}
 )
 add_executable(B
-  src/A.cpp
+  src/B.cpp
 )
 add_dependencies(B ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(B
   ${catkin_LIBRARIES}
 )
 add_executable(C
-  src/A.cpp
+  src/C.cpp
 )
 add_dependencies(C ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(C
   ${catkin_LIBRARIES}
 )
 add_executable(D
-  src/A.cpp
+  src/D.cpp
 )
 add_dependencies(D ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(D

@@ -1,5 +1,5 @@
 <launch>
-       <rosparam command="load" file="/home/kim/catkin_ws/src/single_core/cfg/param_list.yaml"/>
+       <rosparam command="load" file="/home/jihwan/git/ROS_test/src/single_core/cfg/param_list.yaml"/>
        <node pkg="single_core" type="A" name="A" output="screen"/> 
        <node pkg="single_core" type="B" name="B" output="screen" /> 
        <node pkg="single_core" type="C" name="C" output="screen" /> 
