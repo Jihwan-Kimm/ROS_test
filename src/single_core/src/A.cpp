@@ -1,13 +1,12 @@
 #include <ros/ros.h>
+#include <std_msgs/Int32.h>
 
 ros::Subscriber sub_;
 ros::Publisher pub_;
 
 ros::NodeHandle nh;
 
-void cb(const geometry_msgs::PoseStampedConstPtr& msg){
-    rubis::instance_ = RUBIS_NO_INSTANCE;
-    
+void cb(const std_msgs::Int32& msg){
     pub_.publish(msg_);
 }
 
@@ -18,7 +17,6 @@ int main(int argc, char* argv[]){
     nh.param("/A/rate", rate, -1);
 
     pub_=nh.advertise<std_msgs::Int32>("topic_A", 10);
-    //sub_ = nh.subscribe("topic_A", 10, cb);
 
     ros::Rate r(rate);
     while(ros::ok()){
