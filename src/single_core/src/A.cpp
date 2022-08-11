@@ -11,6 +11,7 @@ int main(int argc, char* argv[]){
     int rate;
 
     nh.param("/A/rate", rate, -1);
+    
 
     pub_=nh.advertise<std_msgs::Int32>("/topic_A", 10);
     msg_.data=7;

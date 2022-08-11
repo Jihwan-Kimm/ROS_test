@@ -1,8 +1,14 @@
 A:
-  rate: 5
+  rate: 2
 B:
-  rate: 5
+  rate: 79
+  real: 30000000
+  cbc : 500000
 C:
-  rate: 5
+  rate: 59
+  real: 30000000
+  cbc : 500000
 D:
-  rate: 5
+  rate: 71
+  real: 30000000
+  cbc : 500000
